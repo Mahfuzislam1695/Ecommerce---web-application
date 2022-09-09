@@ -8,6 +8,11 @@
 //     Twitter,
 //   } from '@mui/material/Icon';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import PinterestIcon from '@mui/icons-material/Pinterest';
+import HouseIcon from '@mui/icons-material/House';
+import TwitterIcon from '@mui/icons-material/Twitter';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import { Center, ContactItem, Container, Desc, Left, List, ListItem, Logo, Payment, Right, SocialContainer, SocialIcon, Title } from "./Footer.styled";
   
@@ -27,13 +32,13 @@ import { Center, ContactItem, Container, Desc, Left, List, ListItem, Logo, Payme
               <FacebookIcon />
             </SocialIcon>
             <SocialIcon color="E4405F">
-              {/* <Instagram /> */}
+              <InstagramIcon />
             </SocialIcon>
             <SocialIcon color="55ACEE">
-              {/* <Twitter /> */}
+              <TwitterIcon />
             </SocialIcon>
             <SocialIcon color="E60023">
-              {/* <Pinterest /> */}
+              <PinterestIcon />
             </SocialIcon>
           </SocialContainer>
         </Left>
@@ -54,14 +59,14 @@ import { Center, ContactItem, Container, Desc, Left, List, ListItem, Logo, Payme
         </Center>
         <Right>
           <Title>Contact</Title>
-          {/* <ContactItem>
-            <Room style={{marginRight:"10px"}}/> 622 Dixie Path , South Tobinchester 98336
+          <ContactItem>
+            <HouseIcon style={{marginRight:"10px"}}/> Dhaka , Bangladesh
           </ContactItem>
           <ContactItem>
-            <Phone style={{marginRight:"10px"}}/> +1 234 56 78
-          </ContactItem> */}
+            <LocalPhoneIcon style={{marginRight:"10px"}}/> +8801770831744
+          </ContactItem>
           <ContactItem>
-            <MailOutlineIcon style={{marginRight:"10px"}} /> contact@lama.dev
+            <MailOutlineIcon style={{marginRight:"10px"}} /> mahfuzislam@gmail.com
           </ContactItem>
           <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
         </Right>

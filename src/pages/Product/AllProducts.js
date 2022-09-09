@@ -1,24 +1,20 @@
 import React from "react";
-import Category from "../../components/Category/Category";
 import Footer from "../../components/Footer/Footer";
 import NewsLetter from "../../components/NewsLetter/NewsLetter";
-import Products from "../../components/Products/Products";
+import ProductList from "../../components/ProductList/ProductList";
 import Announcement from "../../components/Shared/Announcement/Announcement";
 import Navbar from "../../components/Shared/Navbar/Navbar";
-import Slider from "../../components/Slider/Slider";
 
-const Home = () => {
+const AllProducts = () => {
   return (
     <>
-      <Announcement />
       <Navbar />
-      <Slider />
-      <Category/>
-      <Products/>
-      <NewsLetter/>
+      <Announcement />
+      <ProductList />
+      <NewsLetter />
       <Footer />
     </>
   );
 };
 
-export default Home;
+export default AllProducts;
