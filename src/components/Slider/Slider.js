@@ -1,12 +1,23 @@
-import React, { useState } from 'react';
-import { Arrow, Button, Container, Desc, Image, ImgContainer, InfoContainer, Slide, Title, Wrapper } from './Slider.style';
+import React, { useState } from "react";
+import {
+  Arrow,
+  Button,
+  Container,
+  Desc,
+  Image,
+  ImgContainer,
+  InfoContainer,
+  Slide,
+  Title,
+  Wrapper,
+} from "./Slider.style";
 // import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
-import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
-import ArrowRightIcon from '@mui/icons-material/ArrowRight';
+import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
+import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import { sliderItems } from "../../data";
 
 const Slider = () => {
-    const [slideIndex, setSlideIndex] = useState(0);
+  const [slideIndex, setSlideIndex] = useState(0);
   const handleClick = (direction) => {
     if (direction === "left") {
       setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2);
@@ -14,8 +25,8 @@ const Slider = () => {
       setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0);
     }
   };
-    return (
-             <Container>
+  return (
+    <Container>
       <Arrow direction="left" onClick={() => handleClick("left")}>
         <ArrowLeftIcon />
       </Arrow>
@@ -37,7 +48,7 @@ const Slider = () => {
         <ArrowRightIcon />
       </Arrow>
     </Container>
-    );
+  );
 };
 
 export default Slider;
